@@ -42,21 +42,27 @@
     <h1>Fahrenheit to Celsius Converter</h1>
 
     <main>
-       <div class="container">
-        <div class="mb-3">
-            <label for="inputFahrenheit" class="form-label">Fahrenheit: </label>
-            <input type="number"
-              class="form-control" id="inputFahrenheit" aria-describedby="helpId">
-        </div>
-
-        <button type="button" class="btn btn-primary mb-3" id="btnCtoF">Convert</button>
-
-        <div class="mb-3">
-            <label for="outputCelsius" class="form-label">Celsius: </label>
-            <input type="text"
-              class="form-control" id="outputCelsius" aria-describedby="helpId" readonly>
-        </div> 
-       </div>
+        <form class="form-horizontal">
+            <div class="container">
+                <div class="mb-3">
+                    <label for="inputFahrenheit" class="form-label">Fahrenheit: </label>
+                    <input type="number"
+                      class="form-control" id="inputFahrenheit" aria-describedby="helpId">
+                </div>
+                
+                <!-- Convert button -->
+                <button type="button" class="btn btn-primary mb-3" id="btnFtoC">Convert</button>
+                <!-- Reset button -->
+                <button type="button" class="btn btn-primary mb-3" id="resetbtnFtoC">Reset</button>
+        
+                <div class="mb-3">
+                    <label for="outputCelsius" class="form-label">Celsius: </label>
+                    <input type="text"
+                      class="form-control" id="outputCelsius" aria-describedby="helpId" readonly>
+                </div> 
+               </div>
+               <p id="errorFtoCMessage" class="error"></p>
+        </form>
     </main>
 
     <script src="/scripts/script.js"></script>

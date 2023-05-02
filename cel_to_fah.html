@@ -43,21 +43,27 @@
     <h1>Celsius to Fahrenheit Converter</h1>
 
     <main>
-       <div class="container">
-        <div class="mb-3">
-            <label for="inputCelsius" class="form-label">Celsius: </label>
-            <input type="number"
-              class="form-control" id="inputCelsius" aria-describedby="helpId">
-        </div>
-
-        <button type="button" class="btn btn-primary mb-3" id="btnFtoC">Convert</button>
-
-        <div class="mb-3">
-            <label for="outputFahrenheit" class="form-label">Fahrenheit: </label>
-            <input type="number"
-              class="form-control" id="outputFahrenheit" aria-describedby="helpId" readonly>
-        </div> 
-       </div>
+        <form class="form-horizontal">
+            <div class="container">
+                <div class="mb-3">
+                    <label for="inputCelsius" class="form-label">Celsius: </label>
+                    <input type="number"
+                      class="form-control" id="inputCelsius" aria-describedby="helpId">
+                </div>
+        
+                <!-- Convert button -->
+                <button type="button" class="btn btn-primary mb-3" id="btnCtoF">Convert</button>
+                <!-- Reset button -->
+                <button type="button" class="btn btn-primary mb-3" id="resetbtnCtoF">Reset</button>
+        
+                <div class="mb-3">
+                    <label for="outputFahrenheit" class="form-label">Fahrenheit: </label>
+                    <input type="text"
+                      class="form-control" id="outputFahrenheit" aria-describedby="helpId" readonly>
+                </div> 
+               </div>
+               <p id="errorCtoFMessage" class="error"></p>
+        </form>
     </main>
 
     <!-- Bootstrap JS -->

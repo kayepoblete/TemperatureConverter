@@ -1,6 +1,24 @@
 /* Developed by Kaye Poblete */
 
+body{
+    background-color: #D7AF70 !important;
+}
+
 h1 {
     text-align: center;
     padding-top: 1%;
+}
+
+.paraHorizontal {
+    width: 50%;
+    margin: 0 auto 2%;
+}
+
+.form-horizontal {
+    width: 50%;
+    margin: auto;
+}
+
+.error {
+    color: red;
 }
